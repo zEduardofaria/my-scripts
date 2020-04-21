@@ -9,7 +9,7 @@ do
 response=$(curl -s -H "User-Agent: W44zt00l" -o /dev/null -w "%{http_code}" http://$1/$word/)
 if [ $response == "200" ]
 then
-echo "Directory found: $word"
+echo "Directory found: $1/$word"
 fi
 done
 fi
